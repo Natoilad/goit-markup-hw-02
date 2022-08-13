@@ -2,15 +2,18 @@
   --brend-color: #2196f3;
   --primery-text-color: #212121;
   --secondary-text-color: #757575;
+  --color-text-dark-theme: #ffffff;
   --text-paragraph: "Roboto", sans-serif;
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
 .logo-up {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -18,7 +21,6 @@ body {
 }
 .logo-down-link {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.14;
@@ -29,34 +31,29 @@ body {
 }
 .menu-nav-link {
   color: var(--primery-text-color);
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .list-contact-link {
   color: var(--secondary-text-color);
-  font-family: var(--text-paragraph);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
-.studio-footer a:hover,
+.address-link:hover,
 .studio-header a:hover,
-.studio-footer a:focus,
+.address-link:focus,
 .studio-header a:focus,
-.address-item:hover {
+.logo-down-link:hover,
+.logo-down-link:focus {
   color: var(--brend-color);
 }
 .link-active {
-  font-family: var(--text-paragraph);
   color: var(--brend-color);
 }
 .title-first {
-  color: white;
+  color: var(--color-text-dark-theme);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -69,8 +66,6 @@ button {
   color: var(--primery-text-color);
 }
 .button {
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -78,18 +73,30 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--color-text-dark-theme);
   background: var(--brend-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 .button-active {
+  font-family: var(--text-paragraph);
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+  border-radius: 4px;
   background-color: #188ce8;
-  color: white;
+  color: var(--color-text-dark-theme);
 }
 .button-link {
   font-family: var(--text-paragraph);
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .hero {
@@ -99,78 +106,48 @@ button {
 .prezents {
   background-color: #f5f5f5;
 }
-.title-technology {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+.technology-title {
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primery-text-color);
 }
 .technology-paragraph {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 .prezents-title {
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primery-text-color);
 }
 .team {
   background-color: #f5f4fa;
 }
 .team-title {
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  color: var(--primery-text-color);
 }
 .team-title-name {
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--primery-text-color);
 }
 .team-paragraph {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
 }
 .project-list-title {
-  font-family: var(--text-paragraph);
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primery-text-color);
 }
 .project-item-paragraph {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
@@ -190,22 +167,10 @@ img {
   background-color: #2f303a;
 }
 .address-nav-link {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: white;
+  color: var(--color-text-dark-theme);
 }
 .address-link {
-  font-family: var(--text-paragraph);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
